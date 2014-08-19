@@ -16,10 +16,7 @@ syntax on
 
 " Use my own color scheme
 colorscheme jybeaujean
-" Below, two other theme that i like.
-"  colorscheme Tomorrow-Night-Bright
-" colorscheme base16-tomorrow
-"
+
 
 " In GUI mode, use Monaco Font
 "
@@ -149,8 +146,10 @@ let NERDTreeIgnore=[ '\.ncb$', '\.suo$', '\.vcproj\.RIMNET', '\.obj$',
                    \ '\.intermediate\.manifest$', '^mt.dep$' ]
 let NERDTreeWinSize=24
 
-" open NerdTREE at startup
-au VimEnter *  NERDTree
+" open NerdTREE at startup only with GUI mode
+if has("gui_running")
+    au VimEnter *  NERDTree
+endif
 
 " 
 " ------------------------------
@@ -172,9 +171,11 @@ nmap <silent> <C-S-d> yyP
 " Edit vimrc with ,v
 nmap <silent> <leader>v :e ~/.vimrc<CR>
 
-" CTRL-s to save
-map <C-s> <esc>:w<CR>
-imap <C-s> <esc>:w<CR>
+" CTRL-s to save only in GUI mode
+if has("gui_running")
+    map <C-s> <esc>:w<CR>
+    imap <C-s> <esc>:w<CR>
+endif
 
 
 
