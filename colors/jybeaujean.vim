@@ -1,7 +1,7 @@
 " Vim color file
 "
 " Author: Jean-Yves Beaujean <jybeaujean@webismymind.be>
-" Based on a Textmate called putty.
+" Based on a Textmate theme called putty.
 hi clear
 
 "set background=dark

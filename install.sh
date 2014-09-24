@@ -41,10 +41,7 @@ git clone https://github.com/jlanzarotta/bufexplorer.git ~/.$VIMDIR/bundle/bufex
 echo "°°°°°°°°  download and install ---> nerdtree"
 git clone https://github.com/scrooloose/nerdtree.git ~/.$VIMDIR/bundle/nerdtree
 echo "°°°°°°°°  download and install ---> snipmate.vim"
-git clone https://github.com/tomtom/tlib_vim.git ~/.$VIMDIR/bundle/tlib_vim
-git clone https://github.com/MarcWeber/vim-addon-mw-utils.git ~/.$VIMDIR/bundle/vim-addon-mw-utils
-git clone https://github.com/garbas/vim-snipmate.git ~/.$VIMDIR/bundle/snipmate.vim
-
+git clone git://github.com/msanders/snipmate.vim.git ~/.$VIMDIR/bundle/snipmate.vim
 echo "°°°°°°°°  download and install ---> vim-fugitive"
 git clone https://github.com/tpope/vim-fugitive.git ~/.$VIMDIR/bundle/vim-fugitive
 echo "°°°°°°°°  download and install ---> vim-surround"
