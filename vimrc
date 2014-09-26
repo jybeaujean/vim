@@ -182,9 +182,6 @@ endif
 au bufNewFile *.tpl 0r ~/.vim/templates/tpl.txt
 
 " Template file : set file type tp HTML
-au BufRead,BufNewFile *.tpl setfiletype html
-au BufRead,BufNewFile *.tpl.nl setfiletype html
-au BufRead,BufNewFile *.tpl.en setfiletype html
-au BufRead,BufNewFile *.tpl.de setfiletype html
-
-
+autocmd BufRead,BufNewFile *.tpl.en setlocal filetype=html
+autocmd BufRead,BufNewFile *.tpl.nl setlocal filetype=html
+autocmd BufRead,BufNewFile *.tpl.de setlocal filetype=html
