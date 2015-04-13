@@ -185,3 +185,4 @@ au bufNewFile *.tpl 0r ~/.vim/templates/tpl.txt
 autocmd BufRead,BufNewFile *.tpl.en setlocal filetype=html
 autocmd BufRead,BufNewFile *.tpl.nl setlocal filetype=html
 autocmd BufRead,BufNewFile *.tpl.de setlocal filetype=html
+autocmd BufRead,BufNewFile *.ractive setlocal filetype=html

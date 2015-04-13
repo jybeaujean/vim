@@ -50,6 +50,9 @@ echo "°°°°°°°°  download and install ---> vim-gitgutter"
 git clone https://github.com/airblade/vim-gitgutter.git ~/.$VIMDIR/bundle/vim-gitgutter
 echo "°°°°°°°°  download and install ---> auto-pairs"
 git clone git://github.com/jiangmiao/auto-pairs.git ~/.$VIMDIR/bundle/auto-pairs
+echo "°°°°°°°°  download and install ---> gtfo"
+git clone https://github.com/justinmk/vim-gtfo.git ~/.$VIMDIR/bundle/gtfo
+
 
 
 
