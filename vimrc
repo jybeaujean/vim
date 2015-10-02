@@ -186,3 +186,7 @@ autocmd BufRead,BufNewFile *.tpl.en setlocal filetype=html
 autocmd BufRead,BufNewFile *.tpl.nl setlocal filetype=html
 autocmd BufRead,BufNewFile *.tpl.de setlocal filetype=html
 autocmd BufRead,BufNewFile *.ractive setlocal filetype=html
+
+
+" Vim close tag
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.tpl,*.tpl.en;*.tpl.nl,*.tpl.de"

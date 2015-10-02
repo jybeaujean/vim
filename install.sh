@@ -52,6 +52,8 @@ echo "°°°°°°°°  download and install ---> auto-pairs"
 git clone git://github.com/jiangmiao/auto-pairs.git ~/.$VIMDIR/bundle/auto-pairs
 echo "°°°°°°°°  download and install ---> gtfo"
 git clone https://github.com/justinmk/vim-gtfo.git ~/.$VIMDIR/bundle/gtfo
+echo "°°°°°°°°  download and install ---> vim-closetag"
+git clone https://github.com/alvan/vim-closetag.git ~/.$VIMDIR/bundle/vim-closetag 
 
 
 
