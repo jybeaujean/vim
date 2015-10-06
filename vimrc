@@ -190,3 +190,7 @@ autocmd BufRead,BufNewFile *.ractive setlocal filetype=html
 
 " Vim close tag
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.tpl,*.tpl.en;*.tpl.nl,*.tpl.de"
+
+
+" GTFO : force using iterm on Mac OS
+let g:gtfo#terminals = { 'mac' : 'iterm' }
