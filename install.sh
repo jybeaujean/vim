@@ -28,32 +28,39 @@ curl -LSso ~/.$VIMDIR/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 echo "[INSTALL SYNTAX FILES]"
 echo "°°°°°°°°  download and install --->  css.vim"
-git clone https://github.com/JulesWang/css.vim  ~/.$VIMDIR/syntax/css.vim
+git clone --quiet https://github.com/JulesWang/css.vim  ~/.$VIMDIR/syntax/css.vim
 
 
 echo "[INSTALL PLUGINS]"
 echo "°°°°°°°°  download and install ---> ctrlp.vim"
-git clone https://github.com/kien/ctrlp.vim.git ~/.$VIMDIR/bundle/ctrlp.vim
+git  clone  --quiet https://github.com/kien/ctrlp.vim.git ~/.$VIMDIR/bundle/ctrlp.vim
 echo "°°°°°°°°  download and install ---> ack.vim"
-git clone https://github.com/mileszs/ack.vim.git ~/.$VIMDIR/bundle/ack.vim
+git  clone  --quiet https://github.com/mileszs/ack.vim.git ~/.$VIMDIR/bundle/ack.vim
 echo "°°°°°°°°  download and install ---> bufexplorer"
-git clone https://github.com/jlanzarotta/bufexplorer.git ~/.$VIMDIR/bundle/bufexplorer
+git  clone --quiet https://github.com/jlanzarotta/bufexplorer.git ~/.$VIMDIR/bundle/bufexplorer
 echo "°°°°°°°°  download and install ---> nerdtree"
-git clone https://github.com/scrooloose/nerdtree.git ~/.$VIMDIR/bundle/nerdtree
+git  clone --quiet https://github.com/scrooloose/nerdtree.git ~/.$VIMDIR/bundle/nerdtree
 echo "°°°°°°°°  download and install ---> snipmate.vim"
-git clone git://github.com/msanders/snipmate.vim.git ~/.$VIMDIR/bundle/snipmate.vim
+git  clone --quiet git://github.com/msanders/snipmate.vim.git ~/.$VIMDIR/bundle/snipmate.vim
 echo "°°°°°°°°  download and install ---> vim-fugitive"
-git clone https://github.com/tpope/vim-fugitive.git ~/.$VIMDIR/bundle/vim-fugitive
+git  clone --quiet https://github.com/tpope/vim-fugitive.git ~/.$VIMDIR/bundle/vim-fugitive
 echo "°°°°°°°°  download and install ---> vim-surround"
-git clone https://github.com/tpope/vim-surround.git ~/.$VIMDIR/bundle/vim-surround
+git  clone --quiet https://github.com/tpope/vim-surround.git ~/.$VIMDIR/bundle/vim-surround
 echo "°°°°°°°°  download and install ---> vim-gitgutter"
-git clone https://github.com/airblade/vim-gitgutter.git ~/.$VIMDIR/bundle/vim-gitgutter
+git  clone --quiet https://github.com/airblade/vim-gitgutter.git ~/.$VIMDIR/bundle/vim-gitgutter
 echo "°°°°°°°°  download and install ---> auto-pairs"
-git clone git://github.com/jiangmiao/auto-pairs.git ~/.$VIMDIR/bundle/auto-pairs
+git  clone --quiet git://github.com/jiangmiao/auto-pairs.git ~/.$VIMDIR/bundle/auto-pairs
 echo "°°°°°°°°  download and install ---> gtfo"
-git clone https://github.com/justinmk/vim-gtfo.git ~/.$VIMDIR/bundle/gtfo
+git  clone --quiet https://github.com/justinmk/vim-gtfo.git ~/.$VIMDIR/bundle/gtfo
 echo "°°°°°°°°  download and install ---> vim-closetag"
-git clone https://github.com/alvan/vim-closetag.git ~/.$VIMDIR/bundle/vim-closetag 
+git  clone --quiet https://github.com/alvan/vim-closetag.git ~/.$VIMDIR/bundle/vim-closetag 
+echo "°°°°°°°°  download and install ---> vim-flagship"
+git  clone --quiet git://github.com/tpope/vim-flagship.git ~/.$VIMDIR/bundle/vim-flagship
+echo "°°°°°°°°  download and install ---> vim-javascript"
+git clone --quiet https://github.com/pangloss/vim-javascript.git ~/.$VIMDIR/bundle/vim-javascript
+echo "°°°°°°°°  download and install ---> html5.vim"
+git clone --quiet https://github.com/othree/html5.vim.git ~/.$VIMDIR/bundle/html5.vim
+
 
 
 

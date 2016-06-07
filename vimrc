@@ -75,6 +75,10 @@ set showmatch
 
 " tell VIM to always put a status line in, even if there is only one window
 set laststatus=2
+set showtabline=2
+
+"disables the GUI tab line in favor of the plain text version
+set guioptions-=e
 
 " Don't update the display while executing macros
 set lazyredraw
@@ -173,8 +177,11 @@ nmap <silent> <leader>v :e ~/.vimrc<CR>
 
 " CTRL-s to save only in GUI mode
 if has("gui_running")
-    map <C-s> <esc>:w<CR>
-    imap <C-s> <esc>:w<CR>
+ "   map <C-s> <esc>:w<CR><esc>
+ "   imap <C-s> <esc>:w<CR><esc>
+  noremap <silent> <C-S>          :update<CR> 
+  vnoremap <silent> <C-S>         <C-C>:update<CR>
+  inoremap <silent> <C-S>         <C-O>:update<CR>
 endif
 
 
@@ -194,3 +201,8 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.tpl,*.tpl.en;*.tpl.nl
 
 " GTFO : force using iterm on Mac OS
 let g:gtfo#terminals = { 'mac' : 'iterm' }
+
+
+" ACK.vim
+" Map :Ack to search:
+cabbrev search Ack
