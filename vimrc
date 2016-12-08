@@ -33,11 +33,10 @@ filetype indent on
 
 
 " ---------------
-" Backups
+" Backups : no bakup !
 " ---------------
-set backup
-set backupdir=~/.vim/backup
-set directory=~/.vim/tmp
+set nobackup "
+set noswapfile 
 
 " UI 
 " ------------------------------
