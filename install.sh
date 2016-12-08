@@ -32,8 +32,10 @@ git clone --quiet https://github.com/JulesWang/css.vim  ~/.$VIMDIR/syntax/css.vi
 
 
 echo "[INSTALL PLUGINS]"
+echo "°°°°°°°°  download and install ---> vim-dev-icons"
+git clone https://github.com/ryanoasis/vim-devicons ~/.$VIMDIR/bundle/vim-devicons
 echo "°°°°°°°°  download and install ---> ctrlp.vim"
-git  clone  --quiet https://github.com/kien/ctrlp.vim.git ~/.$VIMDIR/bundle/ctrlp.vim
+git  clone  --quiet https://github.com/ctrlpvim/ctrlp.vim.git ~/.$VIMDIR/bundle/ctrlp.vim
 echo "°°°°°°°°  download and install ---> ack.vim"
 git  clone  --quiet https://github.com/mileszs/ack.vim.git ~/.$VIMDIR/bundle/ack.vim
 echo "°°°°°°°°  download and install ---> bufexplorer"
@@ -60,6 +62,8 @@ echo "°°°°°°°°  download and install ---> vim-javascript"
 git clone --quiet https://github.com/pangloss/vim-javascript.git ~/.$VIMDIR/bundle/vim-javascript
 echo "°°°°°°°°  download and install ---> html5.vim"
 git clone --quiet https://github.com/othree/html5.vim.git ~/.$VIMDIR/bundle/html5.vim
+echo "°°°°°°°°  download and install ---> far.vim"
+git clone --quiet https://github.com/brooth/far.vim.git ~/.$VIMDIR/bundle/far.vim
 
 
 

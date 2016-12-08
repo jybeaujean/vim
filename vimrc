@@ -21,7 +21,8 @@ colorscheme jybeaujean
 " In GUI mode, use Monaco Font
 "
 if has("gui_running")
-  set guifont=Monaco\ for\ Powerline:h12
+  "set guifont=Monaco\ for\ Powerline:h12
+  set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h12
 endif
 
 
