@@ -206,3 +206,7 @@ let g:gtfo#terminals = { 'mac' : 'iterm' }
 " ACK.vim
 " Map :Ack to search:
 cabbrev search Ack
+
+
+" JSX support in js file
+let g:jsx_ext_required = 0

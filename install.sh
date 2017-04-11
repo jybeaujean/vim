@@ -64,7 +64,8 @@ echo "°°°°°°°°  download and install ---> html5.vim"
 git clone --quiet https://github.com/othree/html5.vim.git ~/.$VIMDIR/bundle/html5.vim
 echo "°°°°°°°°  download and install ---> far.vim"
 git clone --quiet https://github.com/brooth/far.vim.git ~/.$VIMDIR/bundle/far.vim
-
+echo "°°°°°°°°  download and install ---> vim-jsx"
+git clone --quiet https://github.com/mxw/vim-jsx.git  ~/.$VIMDIR/bundle/vim-jsx.vim
 
 
 
