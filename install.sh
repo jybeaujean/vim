@@ -14,7 +14,8 @@ echo "°°°°°°°°  copy vimrc to ~/.vimrc"
 cp vimrc ~/.vimrc
 
 echo "°°°°°°°°  copy colors folder to ~/.$VIMDIR"
-cp -rf colors ~/.$VIMDIR/
+mkdir  ~/.$VIMDIR/colors
+cp -rf colors/* ~/.$VIMDIR/colors
 
 echo "°°°°°°°°  init directories : autoload, bundle"
 # note on directories : 
@@ -33,7 +34,7 @@ git clone --quiet https://github.com/JulesWang/css.vim  ~/.$VIMDIR/syntax/css.vi
 
 echo "[INSTALL PLUGINS]"
 echo "°°°°°°°°  download and install ---> vim-dev-icons"
-git clone https://github.com/ryanoasis/vim-devicons ~/.$VIMDIR/bundle/vim-devicons
+# git clone --quiet https://github.com/ryanoasis/vim-devicons ~/.$VIMDIR/bundle/vim-devicons
 echo "°°°°°°°°  download and install ---> ctrlp.vim"
 git  clone  --quiet https://github.com/ctrlpvim/ctrlp.vim.git ~/.$VIMDIR/bundle/ctrlp.vim
 echo "°°°°°°°°  download and install ---> ack.vim"
@@ -42,18 +43,27 @@ echo "°°°°°°°°  download and install ---> bufexplorer"
 git  clone --quiet https://github.com/jlanzarotta/bufexplorer.git ~/.$VIMDIR/bundle/bufexplorer
 echo "°°°°°°°°  download and install ---> nerdtree"
 git  clone --quiet https://github.com/scrooloose/nerdtree.git ~/.$VIMDIR/bundle/nerdtree
-echo "°°°°°°°°  download and install ---> snipmate.vim"
-git  clone --quiet git://github.com/msanders/snipmate.vim.git ~/.$VIMDIR/bundle/snipmate.vim
-echo "°°°°°°°°  download and install ---> vim-fugitive"
-git  clone --quiet https://github.com/tpope/vim-fugitive.git ~/.$VIMDIR/bundle/vim-fugitive
-echo "°°°°°°°°  download and install ---> vim-surround"
-git  clone --quiet https://github.com/tpope/vim-surround.git ~/.$VIMDIR/bundle/vim-surround
-echo "°°°°°°°°  download and install ---> vim-gitgutter"
-git  clone --quiet https://github.com/airblade/vim-gitgutter.git ~/.$VIMDIR/bundle/vim-gitgutter
-echo "°°°°°°°°  download and install ---> auto-pairs"
-git  clone --quiet git://github.com/jiangmiao/auto-pairs.git ~/.$VIMDIR/bundle/auto-pairs
 echo "°°°°°°°°  download and install ---> gtfo"
 git  clone --quiet https://github.com/justinmk/vim-gtfo.git ~/.$VIMDIR/bundle/gtfo
+echo "°°°°°°°°  download and install ---> vim-gitgutter"
+git  clone --quiet https://github.com/airblade/vim-gitgutter.git ~/.$VIMDIR/bundle/vim-gitgutter
+
+
+echo "°°°°°°°°  download and install ---> snipmate.vim"
+git  clone --quiet git://github.com/msanders/snipmate.vim.git ~/.$VIMDIR/bundle/snipmate.vim
+
+echo "°°°°°°°°  download and install ---> vim-fugitive"
+git  clone --quiet https://github.com/tpope/vim-fugitive.git ~/.$VIMDIR/bundle/vim-fugitive
+
+
+echo "°°°°°°°°  download and install ---> vim-surround"
+git  clone --quiet https://github.com/tpope/vim-surround.git ~/.$VIMDIR/bundle/vim-surround
+
+
+echo "°°°°°°°°  download and install ---> auto-pairs"
+git  clone --quiet git://github.com/jiangmiao/auto-pairs.git ~/.$VIMDIR/bundle/auto-pairs
+
+
 echo "°°°°°°°°  download and install ---> vim-closetag"
 git  clone --quiet https://github.com/alvan/vim-closetag.git ~/.$VIMDIR/bundle/vim-closetag 
 echo "°°°°°°°°  download and install ---> vim-flagship"
@@ -66,6 +76,9 @@ echo "°°°°°°°°  download and install ---> far.vim"
 git clone --quiet https://github.com/brooth/far.vim.git ~/.$VIMDIR/bundle/far.vim
 echo "°°°°°°°°  download and install ---> vim-jsx"
 git clone --quiet https://github.com/mxw/vim-jsx.git  ~/.$VIMDIR/bundle/vim-jsx.vim
+echo "°°°°°°°°  download and install ---> emmet"
+git clone --quiet https://github.com/mattn/emmet-vim.git ~/.$VIMDIR/bundle/emmet-vim
+
 
 
 

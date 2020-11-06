@@ -210,3 +210,32 @@ cabbrev search Ack
 
 " JSX support in js file
 let g:jsx_ext_required = 0
+
+
+" Guttentag & phpcomplete
+set omnifunc=syntaxcomplete#Complete
+autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
+" setup vim tag file
+set tags=tags;/
+
+augroup MyGutentagsStatusLineRefresher
+    autocmd!
+    autocmd User GutentagsUpdating call lightline#update()
+    autocmd User GutentagsUpdated call lightline#update()
+augroup END
+
+
+" context menu : source : https://www.reddit.com/r/vim/comments/joeamj/add_a_context_menu_to_your_vim/
+let g:context_menu_k = [
+        \ ["&Help Keyword\t\\ch", 'echo 100' ],
+        \ ["&Signature\t\\cs", 'echo 101'],
+        \ ['-'],
+        \ ["Find in &File\t\\cx", 'echo 200' ],
+        \ ["Find in &Project\t\\cp", 'echo 300' ],
+        \ ["Find in &Defintion\t\\cd", 'echo 400' ],
+        \ ["Search &References\t\\cr", 'echo 500'],
+        \ ['-'],
+        \ ["&Documentation\t\\cm", 'echo 600'],
+        \ ]
+
+nnoremap <silent>K :call quickui#tools#clever_context('k', g:context_menu_k, {})<cr>
