@@ -1,0 +1,5 @@
+snippet wqr
+	$res = $dbh->query("${1:query}");
+	while ( $row = $res->fetch_assoc() ) {
+	  ${2:code}
+	}

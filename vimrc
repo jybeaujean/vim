@@ -16,13 +16,14 @@ syntax on
 
 " Use my own color scheme
 colorscheme jybeaujean
+" colorscheme seti
 
 
-" In GUI mode, use Monaco Font
-"
+" In GUI mode, use Droid Sans mono "
 if has("gui_running")
-  "set guifont=Monaco\ for\ Powerline:h12
-  set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h12
+  " set guifont=Monaco\ for\ Powerline:h15
+  " set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h12
+  set guifont=UbuntuMono\ Nerd\ Font:h15
 endif
 
 
@@ -135,6 +136,7 @@ let Tlist_Use_Right_Window   = 1
 
 " NERDTree Plugin
 " ------------------------------
+map <C-n> :NERDTreeToggle<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 
@@ -155,7 +157,40 @@ if has("gui_running")
     au VimEnter *  NERDTree
 endif
 
-" 
+" Nerdtree color
+" you can add these colors to your .vimrc to help customizing
+let s:brown = "905532"
+let s:aqua =  "3AFFDB"
+let s:blue = "689FB6"
+let s:darkBlue = "44788E"
+let s:purple = "834F79"
+let s:lightPurple = "834F79"
+let s:red = "AE403F"
+let s:beige = "F5C06F"
+let s:yellow = "F09F17"
+let s:orange = "D4843E"
+let s:darkOrange = "F16529"
+let s:pink = "CB6F6F"
+let s:salmon = "EE6E73"
+let s:green = "8FAA54"
+let s:lightGreen = "31B53E"
+let s:white = "FFFFFF"
+let s:rspec_red = 'FE405F'
+let s:git_orange = 'F54D27'
+
+
+let g:NERDTreeExtensionHighlightColor = {} " this line is needed to avoid error
+let g:NERDTreeExtensionHighlightColor['css'] = s:blue " sets the color of css files to blue
+
+let g:NERDTreeExactMatchHighlightColor = {} " this line is needed to avoid error
+let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the color for .gitignore files
+
+let g:NERDTreePatternMatchHighlightColor = {} " this line is needed to avoid error
+let g:NERDTreePatternMatchHighlightColor['.*_spec\.rb$'] = s:rspec_red " sets the color for files ending with _spec.rb
+
+
+
+
 " ------------------------------
 "
 " Ensure max height isn't too large. (for performance)
@@ -225,17 +260,7 @@ augroup MyGutentagsStatusLineRefresher
 augroup END
 
 
-" context menu : source : https://www.reddit.com/r/vim/comments/joeamj/add_a_context_menu_to_your_vim/
-let g:context_menu_k = [
-        \ ["&Help Keyword\t\\ch", 'echo 100' ],
-        \ ["&Signature\t\\cs", 'echo 101'],
-        \ ['-'],
-        \ ["Find in &File\t\\cx", 'echo 200' ],
-        \ ["Find in &Project\t\\cp", 'echo 300' ],
-        \ ["Find in &Defintion\t\\cd", 'echo 400' ],
-        \ ["Search &References\t\\cr", 'echo 500'],
-        \ ['-'],
-        \ ["&Documentation\t\\cm", 'echo 600'],
-        \ ]
 
-nnoremap <silent>K :call quickui#tools#clever_context('k', g:context_menu_k, {})<cr>
+" Emmet config
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,php,ractive,phtml EmmetInstall
