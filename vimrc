@@ -17,13 +17,15 @@ syntax on
 " Use my own color scheme
 colorscheme jybeaujean
 " colorscheme seti
+set background=dark
+colorscheme hybrid_reverse
 
 
 " In GUI mode, use Droid Sans mono "
 if has("gui_running")
   " set guifont=Monaco\ for\ Powerline:h15
   " set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h12
-  set guifont=UbuntuMono\ Nerd\ Font:h15
+  set guifont=MesloLGS\ NF:h15
 endif
 
 
@@ -42,6 +44,10 @@ set noswapfile
 " UI 
 " ------------------------------
 set number ruler " show line numbers
+
+let g:enable_bold_font = 1
+let g:enable_italic_font = 1
+let g:hybrid_transparent_background = 1
 
 
 " MOUSE
@@ -264,3 +270,6 @@ augroup END
 " Emmet config
 let g:user_emmet_install_global = 0
 autocmd FileType html,css,php,ractive,phtml EmmetInstall
+
+" Vim airline
+let g:airline_theme = "hybrid"
