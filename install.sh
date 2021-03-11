@@ -34,7 +34,8 @@ curl -LSso ~/.$VIMDIR/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 echo "[INSTALL COLOR THEME]"
 echo "°°°°°°°°  download and install --->  vim-hybrid-material" 
-git clone https://github.com/kristijanhusak/vim-hybrid-material ~/.vim/bundle/vim-hybrid-material
+git clone --quiet  https://github.com/kristijanhusak/vim-hybrid-material ~/.vim/bundle/vim-hybrid-material
+
 
 
 echo "[INSTALL SYNTAX FILES]"

@@ -12,22 +12,22 @@ set t_Co=256
 " Map <leader> to ,
 let mapleader=","
 
+
+
 syntax on 
 
-" Use my own color scheme
-colorscheme jybeaujean
-" colorscheme seti
 set background=dark
-colorscheme hybrid_reverse
+colorscheme hybrid_material
 
 
-" In GUI mode, use Droid Sans mono "
 if has("gui_running")
-  " set guifont=Monaco\ for\ Powerline:h15
-  " set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h12
-  set guifont=MesloLGS\ NF:h15
+  set guifont=MesloLGS\ NF:h14
 endif
 
+
+let g:enable_bold_font = 1
+let g:enable_italic_font = 1
+let g:hybrid_transparent_background = 1
 
 " Set filetype stuff to on
 filetype on
@@ -45,9 +45,6 @@ set noswapfile
 " ------------------------------
 set number ruler " show line numbers
 
-let g:enable_bold_font = 1
-let g:enable_italic_font = 1
-let g:hybrid_transparent_background = 1
 
 
 " MOUSE
@@ -272,4 +269,6 @@ let g:user_emmet_install_global = 0
 autocmd FileType html,css,php,ractive,phtml EmmetInstall
 
 " Vim airline
-let g:airline_theme = "hybrid"
+if has("gui_running")
+  let g:airline_theme = "hybrid_reverse"
+endif
