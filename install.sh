@@ -30,7 +30,7 @@ echo "°°°°°°°°  init directories : autoload, bundle"
 
 mkdir -p ~/.$VIMDIR/tmp ~/.$VIMDIR/backup ~/.$VIMDIR/autoload ~/.$VIMDIR/bundle ~/.$VIMDIR/syntax && \
 echo "°°°°°°°°  download and install --->  pathogen..."
-curl -LSso ~/.$VIMDIR/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+curl -LSso ~/.$VIMDIR/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 echo "[INSTALL COLOR THEME]"
 echo "°°°°°°°°  download and install --->  vim-hybrid-material" 
@@ -85,10 +85,9 @@ git  clone --quiet https://github.com/justinmk/vim-gtfo.git ~/.$VIMDIR/bundle/gt
 echo "°°°°°°°°  download and install ---> snipmate.vim"
 # SnipMate aims to provide support for textual snippets, similar to TextMate or other Vim plugins like UltiSnips. For example, in C, typing for<tab> could be expanded to
 # https://github.com/garbas/vim-snipmate
-git clone --quiet https://github.com/tomtom/tlib_vim.git  ~/.$VIMDIR/bundle/tlib_vim
-git clone --quiet https://github.com/MarcWeber/vim-addon-mw-utils.git  ~/.$VIMDIR/bundle/vim-addon-mw-utils
-git clone --quiet https://github.com/garbas/vim-snipmate.git ~/.$VIMDIR/bundle/snipmate.vim
-git clone --quiet https://github.com/honza/vim-snippets.git ~/.$VIMDIR/bundle/vim-snippets
+# git clone --quiet https://github.com/tomtom/tlib_vim.git  ~/.$VIMDIR/bundle/tlib_vim
+# git clone --quiet https://github.com/MarcWeber/vim-addon-mw-utils.git  ~/.$VIMDIR/bundle/vim-addon-mw-utils
+# git clone --quiet https://github.com/honza/vim-snippets.git ~/.$VIMDIR/bundle/vim-snippets
 
 
 
